@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <link href="assets/fire.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles.css" rel="stylesheet" type="text/css" />
+    <title>Untuk Kamu &#9829;</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <div class="foto">
+        <!-- Foto Kamu dan Aku -->
+        <div class="image">
+            <img id="ftKm" src="https://i.postimg.cc/7Y5St8C3/snuggles-caring-1.gif" width="130px" height="130px" />
+            <img id="ftAk" style="opacity: 0; position: absolute" src="https://i.postimg.cc/kG6jCNrG/mimibubu-1.gif" width="130px" height="130px" />
+        </div>
+
+        <!-- Nama Kamu -->
+        <span id="sp1"></span>
+        <div id="sp2" style="display: none">
+            <span id="text3"></span>
+        </div>
+        <div id="sp3" style="display: none">
+            <span id="text4"></span>
+        </div>
+    </div>
+
+    <div id="Content" style="display: none">
+        <div class="pyro" id="fire">
+            <div class="before"></div>
+            <div class="after"></div>
+        </div>
+        <blockquote>
+            <p id="text"></p>
+            <p id="text2"></p>
+        </blockquote>
+    </div>
+
+    <div id="tombo" class="content2">
+        <div id="lopdeg" class="ct1">
+            <label class="lovein" onClick="
+                mulai();
+                nonTo();
+                audioPlay();
+                ">
+          &#10084;&#65039;
+        </label>
+        </div>
+        <p style="opacity: 0.7; font-size: 12px; color: white">
+            Klik Love-nya ya
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("sp1").innerHTML = "Hai Bee Sayang &#9829;";
+
+        const swalm = Swal.mixin({
+            confirmButtonText: "Iyaa, aku maafin!",
+            cancelButtonText: "Ga mau!!! &#x1F60F;",
+            allowOutsideClick: false,
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+        });
+
+        const swals = Swal.mixin({
+            allowOutsideClick: false,
+            confirmButtonText: "Bodo!",
+            confirmButtonColor: "#d33",
+        });
+
+        const swalt = Swal.mixin({
+            allowOutsideClick: false,
+            confirmButtonText: "Y!",
+            confirmButtonColor: "#d33",
+        });
+
+        const swalsy = Swal.mixin({
+            confirmButtonText: "Mauuuuuu!",
+            cancelButtonText: "Ga gamau, gajadi!!! &#x1F60F;",
+            allowOutsideClick: false,
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+        });
+
+        const swalsz = Swal.mixin({
+            confirmButtonText: "Iyaaaa mauuuuu!",
+            cancelButtonText: "Ngga usah gajadi!!! &#x1F620;",
+            allowOutsideClick: false,
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+        });
+
+        async function mulai() {
+            await Swal.fire({
+                title: "Halo sayang &#x1F60A;",
+                timer: 1300,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Yee, hari ini hari yg spesial buat kamu ya",
+                timer: 2700,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Selamat ulang tahun ya sayang &#x1F389;",
+                timer: 4000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Aku mau kasih kamu ucapan nih",
+                timer: 2000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Tapi, sebelum itu aku mau minta maaf dulu sama kamu",
+                timer: 3200,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Maafin aku ya, aku blm bisa kasih apa2 sama kamu &#x1F613;",
+                timer: 3200,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Blm bisa jadi orang pertama yang kasih kamu surprise &#x1F613;",
+                timer: 3500,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Blm bisa gantiin hadiah dan kue dari kamu sblmnya &#x1F614;",
+                timer: 3200,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "dimaafin yaa",
+                timer: 1200,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "dimaafin dong",
+                timer: 1200,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "pokoknya harus dimaafin",
+                timer: 1600,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await maaf();
+        }
+
+        async function maaf() {
+            await swalm.fire("Aku nya dimaafin gak?").then((result) => {
+                if (result.isConfirmed) {
+                    dimaafin();
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    Swal.fire("Masa ngga dimaafin, Please dong dimaafin &#x1F613;");
+                    maaf();
+                }
+            });
+        }
+
+        async function dimaafin() {
+            await Swal.fire({
+                title: "Beneran akunya dimaafin?",
+                timer: 2000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Seneng aku &#x1F60A;",
+                timer: 2000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Makasih ya sayang udah mau maafin aku &#x1F60A;",
+                timer: 3200,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Tapi aku janji bakal kasih kamu hadiah walaupun ngga sekarang",
+                timer: 3200,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Pokoknya ditunggu aja surprise dari aku yaa &#x1F618;",
+                timer: 3000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "yaudah lanjut liat",
+                timer: 2000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await kesel();
+        }
+
+        async function kesel() {
+            await swalsy.fire("Emang kamu mau liat ucapan aku?").then((result) => {
+                if (result.isConfirmed) {
+                    ngeselin();
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    swals.fire("Hmmm, yaudah deh gajadi aku ngucapin-nya &#x1F613;");
+                    showTo();
+                }
+            });
+        }
+
+        async function ngeselin() {
+            await swalsz.fire("Beneran mau liat?").then((result) => {
+                if (result.isConfirmed) {
+                    ucapan();
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    swals.fire("Kok gamau liat ucapan aku sih");
+                    showTo();
+                }
+            });
+        }
+
+        async function ucapan() {
+            window.nama = "Ghea Ananda Syifa";
+            await Swal.fire({
+                title: "Jangan deh...",
+                timer: 1500,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "soalny ucapan aku jelek",
+                timer: 1500,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "takutny kamu nyesel nnti bacanya",
+                timer: 3000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "bohong deh, becanda aku",
+                timer: 2000,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "Yaudah iya maaf",
+                timer: 1500,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "nih aku kasih liat",
+                timer: 1500,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            await Swal.fire({
+                title: "dibaca sampai habis yaa",
+                timer: 1500,
+                showConfirmButton: false,
+                allowOutsideClick: false,
+            });
+            document.getElementById("sp1").innerHTML = nama + " &#128155;";
+            text =
+                "Selamat ulang tahun sayang ku, doa nya semoga kamu panjang umur, sehat selalu dan selalu dalam lindungan Allah SWT kapanpun dan dimanapun kamu berada, semakin rajin lagi ibadahnya dan semoga dilancarkan rezekinya, ya.";
+            text2 =
+                "Semoga apa yang kamu inginkan dan kamu harapkan akan cepat tercapai, bisa bahagiakan orang tua, segala urusannya dipermudah, pahalanya terus ditambah, makin sayang sama keluarga dan sama aku, ya. Tetaplah jadilah " +
+                nama +
+                " yang aku kenal yah. Doa terakhir dari aku Semoga kita masih terus bersama lagi dan lagi dan seterusnya 😊";
+            ketik();
+            showDiv();
+        }
+    </script>
+    <script src="assets/scripts.js"></script>
+</body>
+
+</html>
