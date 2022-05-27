@@ -56,7 +56,7 @@ var o = 0,
 text3 = "...                                        "
 var a = 0,
     text4;
-text4 = "Loveyoumore MaLinh "
+text4 = "Loveyoumore Sayang "
 
 function ketik() {
     if (i < text.length) {
