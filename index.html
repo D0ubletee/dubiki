@@ -82,8 +82,8 @@
         });
 
         const swalsy = Swal.mixin({
-            confirmButtonText: "được mà!",
-            cancelButtonText: "k được, còn lâu!!! &#x1F60F;",
+            confirmButtonText: "có ạ!",
+            cancelButtonText: "k, còn lâu!!! &#x1F60F;",
             allowOutsideClick: false,
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
@@ -91,8 +91,8 @@
         });
 
         const swalsz = Swal.mixin({
-            confirmButtonText: "yyyyyy!",
-            cancelButtonText: "đừng lo!!! &#x1F620;",
+            confirmButtonText: "vânggggg!",
+            cancelButtonText: "k thèmmm!!! &#x1F620;",
             allowOutsideClick: false,
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
@@ -155,13 +155,13 @@
                 allowOutsideClick: false,
             });
             await Swal.fire({
-                title: "xin lỗi =))",
+                title: "xin lỗi mà =))",
                 timer: 1200,
                 showConfirmButton: false,
                 allowOutsideClick: false,
             });
             await Swal.fire({
-                title: "xứng đáng đc tha lỗi",
+                title: "liệu có xứng đáng đc tha lỗi",
                 timer: 1600,
                 showConfirmButton: false,
                 allowOutsideClick: false,
@@ -170,7 +170,7 @@
         }
 
         async function maaf() {
-            await swalm.fire("Aku nya dimaafin gak?").then((result) => {
+            await swalm.fire("được hay k?").then((result) => {
                 if (result.isConfirmed) {
                     dimaafin();
                 } else if (result.dismiss === Swal.DismissReason.cancel) {
@@ -182,13 +182,13 @@
 
         async function dimaafin() {
             await Swal.fire({
-                title: "có đc tha lỗi k?",
+                title: "k miễn cưỡng đấy chứ?",
                 timer: 2000,
                 showConfirmButton: false,
                 allowOutsideClick: false,
             });
             await Swal.fire({
-                title: "a rất vui &#x1F60A;",
+                title: "a biết mà &#x1F60A;",
                 timer: 2000,
                 showConfirmButton: false,
                 allowOutsideClick: false,
@@ -243,7 +243,7 @@
         }
 
         async function ucapan() {
-            window.nama = "Ghea Ananda Syifa";
+            window.nama = "Linh thân yêu";
             await Swal.fire({
                 title: "đừng...",
                 timer: 1500,
@@ -288,11 +288,12 @@
             });
             document.getElementById("sp1").innerHTML = nama + " &#128155;";
             text =
-                "Chúc mừng sinh nhật em THÂN yêu, a mong rằng em thêm tuổi mới, luôn mạnh khỏe và luôn được mọi người yêu mến  .";
+                "Chúc mừng sinh nhật em THÂN yêu, a mong rằng em thêm tuổi mới, luôn mạnh khỏe xinh đẹp và luôn được mọi người yêu mến  .";
             text2 =
-                "Semoga apa yang kamu inginkan dan kamu harapkan akan cepat tercapai, bisa bahagiakan orang tua, segala urusannya dipermudah, pahalanya terus ditambah, makin sayang sama keluarga dan sama aku, ya. Tetaplah jadilah " +
+                "Hy vọng những gì em mong muốn sẽ nhanh chóng đạt được, mong em sẽ sớm có việc làm ổn định, mọi vấn đề đều được dễ dàng giải quyết, gặt hái nhiều thành công, hãy tiếp tục là
+              " +
                 nama +
-                " yang aku kenal yah. Doa terakhir dari aku Semoga kita masih terus bersama lagi dan lagi dan seterusnya 😊";
+                " điều này là chắc chắn rồi , lời cuối cùng a muốn nói với em là hãy tiếp tục hát cho a nghe đi cô gái😊";
             ketik();
             showDiv();
         }
