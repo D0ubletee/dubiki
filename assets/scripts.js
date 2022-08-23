@@ -56,7 +56,7 @@ var o = 0,
 text3 = "...                                        "
 var a = 0,
     text4;
-text4 = "Loveyoumore MaLinh "
+text4 = "Happy Birthday Kim Dung "
 
 function ketik() {
     if (i < text.length) {
@@ -102,7 +102,7 @@ function duar() {
         setTimeout(duar, 250);
     }
     if (a == text4.length) {
-        document.getElementById("text4").innerHTML = "Loveyoumore MaLinh &#9829;";
+        document.getElementById("text4").innerHTML = "Happy Birthday Kim Dung &#9829;";
         document.body.style.backgroundColor = "#0059B9";
         document.getElementById('fire').style.opacity = "1";
         fotoKt();
