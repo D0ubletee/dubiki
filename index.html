@@ -232,7 +232,7 @@
         }
 
         async function ngeselin() {
-            await swalsz.fire("chị thực sự muốn xem k ạ?").then((result) => {
+            await swalsz.fire("chị thực sự muốn xem đúng k ạ?").then((result) => {
                 if (result.isConfirmed) {
                     ucapan();
                 } else if (result.dismiss === Swal.DismissReason.cancel) {
@@ -275,7 +275,7 @@
                 allowOutsideClick: false,
             });
             await Swal.fire({
-                title: "hẹn chị năm sau vậy :v",
+                title: "đành hẹn chị năm sau vậy :v",
                 timer: 1500,
                 showConfirmButton: false,
                 allowOutsideClick: false,
